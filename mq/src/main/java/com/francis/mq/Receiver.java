@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Date;
 
 @Component
-@RabbitListener(queues = "test")
+@RabbitListener(queues = "hello")
 public class Receiver {
 
     @RabbitHandler
