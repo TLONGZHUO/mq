@@ -1,0 +1,30 @@
+spring:
+    application:
+      name: executor
+    #热部署配置
+    devtools:
+        restart:
+            enabled: false
+        livereload:
+            enabled: false
+
+#feign:
+#  hystrix:
+#    enabled: true
+#  httpclient: true
+#  compression:
+#    request:
+#      enabled: true
+#    response:
+#      enabled: true
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8084
