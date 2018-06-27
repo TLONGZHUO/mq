@@ -14,6 +14,5 @@ public class Service {
 
     public void httptest(){
         loginClient.login();
-        System.out.println("AAAAAA");
     }
 }
